@@ -1,0 +1,17 @@
+<!--layouts 폴더에 있는 header라는 레이아웃을 공통으로 사용함!-->
+{{>layouts/header}}
+
+<!--입력 폼 작성-->
+<form class="container" action="/articles/create" method="post">
+    <div class="mb-3">
+        <label class="form-label" for="title">제목</label>
+        <input id="title" name="title" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="content">내용</label>
+        <textarea id="content" name="content" class="form-control" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{{>layouts/footer}}
