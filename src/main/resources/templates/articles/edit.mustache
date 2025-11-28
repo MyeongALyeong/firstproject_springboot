@@ -1,0 +1,16 @@
+{{>layouts/header}}
+<!--수정 폼 작성-->
+<form class="container" action="/articles/update" method="post">
+    <input name="id" type="hidden" value="{{id}}">
+    <div class="mb-3">
+        <label class="form-label" for="title">제목</label>
+        <input id="title" name="title" type="text" class="form-control" value="{{article.title}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="content">내용</label>
+        <textarea id="content" name="content" class="form-control" rows="3">{{article.content}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/articles/{{article.id}}">Back</a>
+</form>
+{{>layouts/footer}}

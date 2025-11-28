@@ -18,4 +18,14 @@
     {{/article}}
     </tbody>
 </table>
+
+<!--Edit 버튼-->
+<a href="/articles/{{article.id}}/edit" class="btn btn-primary">Edit</a>
+
+<!--Delete버튼-->
+<a href="/articles/{{article.id}}/delete" class="btn btn-danger">Delete</a>
+
+<!--목록이동-->
+<a href="/articles">Go to Article List</a>
+
 {{>layouts/footer}}
